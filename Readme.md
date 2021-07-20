@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Валерий Александров](https://up.htmlacademy.ru/adaptive/23/user/1664091).
-* Наставник: `Неизвестно`.
+* Наставник: [Егор Дьяченко](https://htmlacademy.ru/profile/semperhomolupus).
 
 ---
 
