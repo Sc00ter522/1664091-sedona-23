@@ -1,45 +1,165 @@
+.features__text {
+  text-align: center;
+  width: 270px;
+  margin: 0 auto;
+}
+
 .features__slogan {
   .reset();
+  font-size: 18px;
+  line-height: 26px;
+  padding-top: 32px;
+  padding-bottom: 34px;
+}
+
+.features__intro {
+  .reset();
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.features__info {
+  position: relative;
+  &::after {
+    display: block;
+    position: absolute;
+    content: "";
+    background-image: url(../img/white-copy-2.svg);
+    height: 37px;
+    width: 100%;
+    bottom: -35px;
+    left: 0;
+    background-position: center bottom;
+  }
 }
 
 .features__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.features__list h3,
-.features__list p {
   .reset();
 }
 
-.features__item--lead {
+.features__lead {
   background-color: #81B3D2;
   color: white;
 }
 
-.feature__item--house {
-  background-image: url("../img/icon-house.svg");
-  background-repeat: no-repeat;
+.features__lead--top {
+  padding-top: 71px;
+  text-align: center;
 }
 
-.feature__item--food {
+.description {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 280px;
+}
+
+.description--top {
+  padding-bottom: 39px;
+}
+
+.features__lead--bottom {
+  padding-bottom: 35px;
+  text-align: center;
+}
+
+.description--bottom {
+  padding-top: 39px;
+}
+
+.description__title {
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.description__subtitle {
+  margin-bottom: 25px;
+}
+
+.description__text {
+  margin: 0;
+}
+
+.description__subtitle,
+.description__text {
+  margin-top: 0;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.qualities {
+  list-style: none;
+  .reset();
+  padding: 25px 0 35px 0;
+}
+
+.advantages {
+  list-style: none;
+  .reset();
+}
+
+.features__image {
+  background-repeat: no-repeat;
+  height: 260px;
+  width: 100%;
+  background-size: cover;
+}
+
+.features__image--city {
+  background-image: url("../img/photo-city@1x-1.jpg");
+}
+
+.features__image--bridge {
+  background-image: url("../img/photo-bridge@1x-1.jpg");
+}
+
+.qualities__item {
+  padding-top: 10px;
+  padding-left: 52px;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.qualities__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.qualities__item--house {
+  background-image: url("../img/icon-house.svg");
+  background-repeat: no-repeat;
+  background-position-x: 3px;
+}
+
+.qualities__item--food {
   background-image: url("../img/icon-burger.svg");
   background-repeat: no-repeat;
 }
 
-.feature__item--souvenir {
+.qualities__item--souvenir {
   background-image: url("../img/icon-gift.svg");
   background-repeat: no-repeat;
+  background-position-x: 5px;
 }
 
-.feature__item--bottom {
+.qualities__title,
+.qualities__text {
+  .reset();
+}
+
+.features__item--bottom {
   background-color: #EEE;
 }
 
-.feature__item--bottom p {
+.features__item--bottom p {
   color: #333;
 }
+
+.features__lead--img {
+  display: block;
+}
+
 
 .appointment__text {
   color: #333;
