@@ -1,0 +1,17 @@
+.welcome-inner {
+  background-image: url("../img/back-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  position: relative;
+  height: 158px;
+  &::after {
+    .triangle();
+  }
+}
+
+.welcome-inner__img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
