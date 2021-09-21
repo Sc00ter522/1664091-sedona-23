@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-  <body class="page__body page-form">
+  <body class="page__body">
     <header class="page-header">
       <a class="page-header__navigation-logo">
         <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Седоны">
@@ -39,58 +39,69 @@
       </nav>
     </header>
     <main class="page-main">
+      <section class="welcome-inner">
+        <img class="welcome-inner__img" src="img/sedona.svg" alt="Седона">
+      </section>
       <h1 class="visually-hidden">Страница отзыва</h1>
-      <section class="page-main__header">
-        <h2>Оставьте свой отзыв</h2>
-        <p>Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <section class="info">
+        <h2 class="info__title">Оставьте свой отзыв</h2>
+        <p class="info__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </section>
       <section class="form">
         <form method="get" action="https://echo.htmlacademy.ru">
-          <div class="form-field">
+          <div class="form-fields">
             <h2 class="visually-hidden">Форма отзыва</h2>
-            <fieldset class="form-field__name name">
-              <legend class="name__legend">Представьтесь:</legend>
-              <ul class="name__list">
-                <li class="name__item">
-                  <label class="name__item--first-name" for="first-name">
-                    Имя*:
-                    <input class="name__item--first-input" type="text" name="first-name" id="first-name" placeholder="Петр" title="Ваше Имя" required>
-                  </label>
-                </li>
-                <li class="name__item">
-                  <label class="name__item--second-name" for="second-name">
-                    Фамилия*:
-                    <input class="name__item--second-input" type="text" name="second-name" id="second-name" placeholder="Иванов" title="Ваша Фамилия" required>
-                  </label>
-                </li>
-                <li class="name__item">
-                  <label class="name__item--patronymic-name" for="patronymic-name">
-                    Отчество:
-                    <input class="name__item--patronymic-input" type="text" name="patronymic-name" id="patronymic-name" placeholder="Александрович" title="Ваше Отчество">
-                  </label>
-                </li>
-              </ul>
+            <fieldset class="form-field name">
+              <div class="form-field__content">
+                <legend class="name__legend">Представьтесь:</legend>
+                <ul class="name__list">
+                  <li class="name__item">
+                    <label class="name__label" for="first-name">
+                      <span class="name__text">Имя*:</span>
+                      <input class="name__input" type="text" name="first-name" id="first-name" placeholder="Петр" title="Ваше Имя" required>
+                    </label>
+                  </li>
+                  <li class="name__item">
+                    <label class="name__label" for="second-name">
+                      <span class="name__text">Фамилия*:</span>
+                      <input class="name__input" type="text" name="second-name" id="second-name" placeholder="Иванов" title="Ваша Фамилия" required>
+                    </label>
+                  </li>
+                  <li class="name__item">
+                    <label class="name__label" for="patronymic-name">
+                      <span class="name__text">Отчество:</span>
+                      <input class="name__input" type="text" name="patronymic-name" id="patronymic-name" placeholder="Александрович" title="Ваше Отчество">
+                    </label>
+                  </li>
+                </ul>
+              </div>
             </fieldset>
-            <fieldset class="form-field__contacts contacts">
-              <legend class="contacts__legend">Контактная информация:</legend>
-              <ul class="contacts__list">
-                <li class="contacts__item">
-                  <label class="contacts__item--phone" for="phone">
-                    Контактный телефон*:
-                    <input class="contacts__item--phone-input" type="text" name="phone" id="phone" placeholder="Введите телефон" title="Ваш номер телефона" required>
-                    <div class="contacts__item--logo logo-phone"></div>
-                  </label>
-                </li>
-                <li class="contacts__item">
-                  <label class="contacts__item--mail" for="mail">
-                    Электронная почта*:
-                    <input class="contacts__item--mail-input" type="text" name="mail" id="mail" placeholder="Введите e-mail" title="Ваш e-mail" required>
-                    <div class="contacts__item--logo logo-mail"></div>
-                  </label>
-                </li>
-              </ul>
+            <fieldset class="form-field contacts">
+              <div class="form-field__content">
+                <legend class="contacts__legend">Контактная информация:</legend>
+                <ul class="contacts__list">
+                  <li class="contacts__item">
+                    <label class="contacts__label" for="phone">
+                      <span class="contacts__text">Контактный телефон*:</span>
+                      <div class="contacts__group">
+                        <input class="contacts__input" type="text" name="phone" id="phone" placeholder="Введите телефон" title="Ваш номер телефона" required>
+                        <button class="contacts__logo logo-phone"></button>
+                      </div>
+                    </label>
+                  </li>
+                  <li class="contacts__item">
+                    <label class="contacts__label" for="mail">
+                      <span class="contacts__text">Электронная почта*:</span>
+                      <div class="contacts__group">
+                        <input class="contacts__input" type="text" name="mail" id="mail" placeholder="Введите e-mail" title="Ваш e-mail" required>
+                        <button class="contacts__logo logo-mail"></button>
+                      </div>
+                    </label>
+                  </li>
+                </ul>
+              </div>
             </fieldset>
-            <fieldset class="form-field__impress impress">
+            <fieldset class="form-field impress">
               <legend class="impress__legend">Ваше Общее впечатление:</legend>
               <ul class="impress__list">
                 <li class="impress__item">
@@ -116,7 +127,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="form-field__visited visited">
+            <fieldset class="form-field visited">
               <legend class="visited__legend">Посещенные достопримечательности:</legend>
               <ul class="visited__list">
                 <li class="visited__item">
@@ -149,7 +160,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="form-field__comment comment">
+            <fieldset class="form-field comment">
               <legend class="comment__legend">Опишите свои эмоции:</legend>
               <textarea class="comment__field" rows="5">Опишите подробно все свои восторги</textarea>
             </fieldset>
